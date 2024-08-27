@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <input type="text" id="keyEvents" />
+
+    <button onclick="document.getElementById('time').innerHTML=Date()">Show Time</button>
+    <div id="time">   
+    </div>
+    <div onmouseover="document.body.style.backgroundColor='aqua'"
+    onmouseout="document.body.style.backgroundColor='green'"
+    id="Change"
+    >Mousecover to Change color of page to aqua</div>
+
+<script type="text/JavaScript">
+    var i = 0;
+    document.getElementbyId('Change') .onmouseover = function {
+        i++;
+        document.grtElementbyId('time').innerHTML="Mouse over is called with i: " + i:    
+    };  document.getElementbyId('Change') .onmouseover = function {
+        i++;
+        document.grtElementbyId('time').innerHTML="Mouse move is called with i: " + i:    
+    };
+
+     document.getElemetbyId('Change').onmousedown = function() {
+        alert('Mouse Down is occured');
+     };
+     document.getElemetbyId('Change').onmouseup = function() {
+        alert('Mouse up is occured');
+     };
+
+     document.getElementbyId('keyEvents') .onkeydown = function() {
+        document.getElementbyId('time').innerHTML = "key is Down";
+             
+     }
+       document.getElementbyId('keyEvents') . onkeypress = function() {
+        document.getElementbyId('time').style.backgroundColor = 'red'
+     }
+
+    </script>
+</body>

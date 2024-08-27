@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <h1>functions</h1>
+    <script type="text/JavaScript">
+        function factorial(a) {
+            if (a < 1)
+            return 1;
+        }
+        function print10numbers() {
+            var fact = 1;
+        for (var i = 1; i < 10; i++) {
+            fact *= i;
+            console.log(i);
+             
+         }   
+         return fact;
+        }
+        var total = factorial(5);
+      console.log(total);
+        
+      console.log("***************First call**************");
+      print10numbers();
+      console.log("***************second call**************");
+      print10numbers();
+      console.log("***************Third call**************");
+      print10numbers();
+       
+    </script>
+</body>
+</html>
