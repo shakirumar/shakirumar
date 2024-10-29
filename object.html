@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>Output is in Your Console window</h1>
+    <script type="text/JavaScript">
+      //json
+
+      let hii = {
+        'google': "googel",
+        'json': "javascript object otation",
+
+        'farma':[{
+        'variable': "let const var",
+        'arrey':  "object number value",
+        'loop': "for loop else loop in loop ",
+        'dom': "full farm document object model",
+        'opraters': "asignment oprators"
+        }]
+      };
+      hii['loop'] = "document object model";
+      let s = {
+        'Name' : "shakir",
+        'Mob' : "7887476410",
+        'address' : "Allahabad",
+        'dockoment' :[{
+          'Bank' : "Dcb",
+          'numb' : "786",
+          'region': "sales"
+         }]
+      };
+      let arr = {...s};
+      arr['Name'] = 'javascript';
+
+      console.log(hii);
+      console.log(s);
+
+  function arr2obj(arr) {
+
+    // Create an empty object
+    let obj = {}
+arr.forEach((v)   => {
+  // Extract the key and the value
+  let key = v[0];
+  let value = [1];
+  // Add the key and value to the new object
+  obj[key] = value;
+});
+//Return the object 
+return obj;
+
+  }
+ 
+  console.log(
+       arr2obj([
+           ["Umar", "Burger" ],
+           ["Shakir", "Spring Rolls"],
+           ["Huziafa", "Pizza"],
+           ["Neha", "Ice Cream"],
+    ])
+  );
+
+
+
+</script>  
+</body>
+</html>

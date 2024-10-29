@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let fruits  = ['apple','orenge','banana'];
+    console.log(fruits.length);
+    console.log(fruits[1])
+    fruits[1] = "vivo";
+    fruits.splice(1,1)
+    fruits.unshift('mango');
+
+    for(let i = 2; i < fruits.length; i++){
+        console.log(fruits[i])
+    }
+    document.write(fruits);
+    // cocat arrey
+    let arr1 = [1,2,3,4,5,6,4]
+    let arr2 = [1,4,5,4,8,6,4]
+    let newarr = arr1.concat(arr2)
+    console.log(newarr)
+    document.write("</br>");
+    document.write(newarr);
+    //2d arrey
+    let arr = [[123],[852],[987]]
+    console.log(arr);
+ // arrey with
+
+ let arrr = [25,50,69,89,91,63];
+
+ console.log(arrr);
+let H = [5,8,9,5,];
+ let Heros= ["Superman","shaktiman", "spiderman","Hulkman"];
+ let h1 = H.concat(Heros)
+ console.log(h1);
+
+ for(let i = 0; i < Heros.length; i++){
+    console.log(Heros[i]);
+    
+ };
+    document.write("</br>");
+    document.write(Heros);
+
+
+ let cityes = ["allahabad","delhi","faridabad","southeat","sorao"];
+
+ for(let city of cityes){
+    console.log(city)
+ }
+
+ // marks avg arrey
+ let marks = [96,97,69,73,60];
+
+ let avg = marks.reduce((a,b) => a + b, 0) / marks.length;
+console.log(`avg marks of the class = ${avg}`);
+document.write("</br>");
+document.write(`avg marks of the class = ${avg}`);
+
+// items offer 10 %
+
+let price = [888,961,777,900,877];
+
+for (let i = 0; i < price.length; i++) {
+   let offer = price[i] / 15;
+   price[i] -= offer;
+}
+
+console.log(price);
+ // arrey .push .pop .tostring
+
+ let food = ["lichi","orenge","tomoto"]
+
+ console.log(food.push("karela"));
+
+// arrey splice shift unshift
+
+let company = ["shift","toyota","maruti","frari"];
+company.splice(2,1,"creta");
+</script>
+</body>
+</html>

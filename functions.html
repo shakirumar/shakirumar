@@ -30,7 +30,64 @@
       print10numbers();
       console.log("***************Third call**************");
       print10numbers();
-       
+
+
+       let arro = (y,u) =>{
+        return y+u
+       }
+
+       let vowel = (str) =>{
+        let count = 0;
+        for (let char of str){
+            if   (char === "a"
+                || char === "e"
+                || char === "i"
+                || char === "o"
+                || char === "u"
+            ) {
+                count++;
+            }
+        }
+        console.log(count);
+       }
+
+       let val = [1,2,3,5,4,6,8,9]
+
+       val.forEach(function printVal(arr) {
+        
+          console.log(arr)
+        
+          
+       });
+
+       let ho = ["hello","java","script"];
+
+          ho.map((val) =>{
+            return val;
+
+          });
+
+          let n = prompt("Enter The number :");
+
+          let arr = [];
+
+          for (let i = 1; i <=n; i++){
+            arr[i - 1] = i;
+          }
+
+          console.log(arr);
+
+          let sum = arr.reduse((res, curr) => {
+            return res + curr;
+          });
+
+          console.log("sum = ", sum);
+
+          let fact = arr.reduse((res, curr) => {
+            return res * curr;
+          });
+
+          console.log("factorial = ", fact);
     </script>
 </body>
 </html>
